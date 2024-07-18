@@ -15,5 +15,5 @@ before_install:
   - cd $TRAVIS_BUILD_DIR
 
 script:
-  - g++ -isystem /usr/include -pthread -o test_main tests/test_main.cpp /usr/lib/libgtest.a /usr/lib/libgtest_main.a
+  - g++ -isystem /usr/include -pthread -o test_main test/test_main.cpp /usr/lib/libgtest.a /usr/lib/libgtest_main.a
   - ./test_main
